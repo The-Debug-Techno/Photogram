@@ -5,6 +5,14 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photogram.Domain", "Photogram.Domain\Photogram.Domain.csproj", "{D478D742-2569-40B1-B0CB-3B1D9F287012}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photogram.Application", "Photogram.Application\Photogram.Application.csproj", "{F1145DA1-9390-4D4F-B94E-48E81923F828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photogram.Infrastructure", "Photogram.Infrastructure\Photogram.Infrastructure.csproj", "{17A44077-22BB-4217-8196-A123830087FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photogram.Persistence", "Photogram.Persistence\Photogram.Persistence.csproj", "{875B125C-29D9-458A-9502-D0BB28C6C023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photogram.Api", "Photogram.Api\Photogram.Api.csproj", "{F1884739-8A23-4FED-AE9B-53021CEBC51E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{D478D742-2569-40B1-B0CB-3B1D9F287012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D478D742-2569-40B1-B0CB-3B1D9F287012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D478D742-2569-40B1-B0CB-3B1D9F287012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1145DA1-9390-4D4F-B94E-48E81923F828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1145DA1-9390-4D4F-B94E-48E81923F828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1145DA1-9390-4D4F-B94E-48E81923F828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1145DA1-9390-4D4F-B94E-48E81923F828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A44077-22BB-4217-8196-A123830087FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A44077-22BB-4217-8196-A123830087FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A44077-22BB-4217-8196-A123830087FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A44077-22BB-4217-8196-A123830087FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875B125C-29D9-458A-9502-D0BB28C6C023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875B125C-29D9-458A-9502-D0BB28C6C023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875B125C-29D9-458A-9502-D0BB28C6C023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875B125C-29D9-458A-9502-D0BB28C6C023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1884739-8A23-4FED-AE9B-53021CEBC51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1884739-8A23-4FED-AE9B-53021CEBC51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1884739-8A23-4FED-AE9B-53021CEBC51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1884739-8A23-4FED-AE9B-53021CEBC51E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
