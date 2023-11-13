@@ -15,7 +15,24 @@ public static partial class HostConfiguration
 
         return builder;
     }
+    private static WebApplicationBuilder AddDevTools(this WebApplicationBuilder builder)
+    {
+        builder.Services.AddSwaggerGen();
+        builder.Services.AddEndpointsApiExplorer();
 
+        /*
+         ADD THIS TO YOUR API USER SECRETS 
+         
+         "ConnectionStrings": {
+       "DefaultConnection":
+        "Host=localhost;Port=5432;Database=Photogram;Username=[YOUR USERNAME];Password=[YOUR PASSWORD]"
+        }
+         
+         
+         */
+
+        return builder;
+    }
     private static WebApplicationBuilder AddInfrastructures(this WebApplicationBuilder builder)
     {
         // add service
@@ -23,6 +40,22 @@ public static partial class HostConfiguration
         builder.Services
             .AddScoped<IUserRepository, UserRepository>();
 
+        builder.Services.AddControllers();
+
         return builder;
     } 
+    private static WebApplication UseDevtools(this WebApplication app)
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+
+        return app;
+    }
+    private static WebApplication UseControllers(this WebApplication app)
+    {
+        app.MapControllers();
+
+        return app;
+    }
+
 }
