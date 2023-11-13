@@ -1,9 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Photogram.Domain.Entities;
 
 namespace Photogram.Persistence.DataContext;
 
 public class AppDbContext : DbContext
 {
+    public DbSet<User> Users => Set<User>();
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
     }

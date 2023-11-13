@@ -1,11 +1,11 @@
+using Photogram.Api.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+await builder.ConfigureAsync();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-
-app.UseHttpsRedirection();
+await app.ConfigureAsync();
 
 app.Run();
